@@ -5,13 +5,16 @@ const Navbar = () => (
     <section className="intro-container">
         <h1>
             <Link to='/'
-            style={{ color: 'white', textDecoration: 'none'}}>
+            style={{ color: 'white', textDecoration: 'none'}}
+            >
                 BasedReviews
             </Link>
         </h1>
         <nav>
             <ul>
-                <li><Link to='/reviews'>Reviews</Link></li>
+                <li><Link to='/reviews'
+                activeStyle={{ color: '#FFD700'}}
+                    >Reviews</Link></li>
             </ul>
         </nav>
     </section>
