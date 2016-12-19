@@ -1,0 +1,45 @@
+.review-container {
+  @include outer-container(95%);
+
+  .image-title-container {
+    @include media($mobile) {
+      @include span-columns(4, block);
+      height: auto;
+    }
+
+    h2 {
+      @include media($mobile) {
+        font-size: 2em;
+        text-align: center;
+      }
+    }
+  }
+
+  .image-container {
+    @include media($mobile) {
+      @include span-columns(4, block);
+    }
+
+    figure {
+      @include media($mobile) {
+        width: auto;
+      }
+
+      img {
+        @include media($mobile) {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  p {
+    @include media($mobile) {
+      @include span-columns(4, block);
+      @include shift(0);
+      font-size: 1em;
+      font-weight: 100;
+    }
+  }
+}

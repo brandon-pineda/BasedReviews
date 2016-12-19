@@ -1,10 +1,13 @@
 @import 'utils/bourbon/bourbon';
 @import 'utils/neat/neat';
-@import 'components/App';
+@import 'utils/variables';
+@import 'components/Intro';
 @import 'components/Review';
+@import 'components/mobile/Intro';
+@import 'components/mobile/Review';
 
 body {
-  font-family: 'Baloo Thambi', cursive;;
+  font-family: 'Baloo Thambi', cursive;
   margin: 0;
   padding: 0;
 }

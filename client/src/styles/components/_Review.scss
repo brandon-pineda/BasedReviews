@@ -1,6 +1,38 @@
 .review-container {
-  @include outer-container(100%);
-  text-align: left;
+  @include outer-container(70%);
+  margin-top: 10px;
+
+  .image-title-container {
+    @include span-columns(6, block);
+    align-items: center;
+    display: flex;
+    height: 465px;
+    justify-content: center;
+
+    h2 {
+      font-size: 4em;
+      font-weight: lighter;
+    }
+  }
+
+  .image-container {
+    @include span-columns(6, block);
+    @include omega;
+
+    figure {
+      width: 400px;
+    }
+
+    img {
+      height: 400px;
+      margin: auto;
+      width: 100%;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+  }
 
   p {
     @include span-columns(10, block);
