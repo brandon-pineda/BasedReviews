@@ -3,12 +3,49 @@ $bright-purple: #d026ce;
 
 .intro-container {
   @include outer-container(100%);
+  @include clearfix;
   background-color: $bright-purple;
   color: $white;
-  padding: 20px;
+  height: 59px;
+  line-height: 59px;
   text-align: center;
 
   h1 {
-    font-size: 4em;
+    @include span-columns(2, block);
+    float: left;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  nav {
+    @include span-columns(10, block);
+    float: left;
+    height: 100%;
+    padding-top: .3em;
+    text-align: right;
+    vertical-align: bottom;
+
+    ul {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+
+
+      li {
+        background: transparent;
+        display: inline;
+        text-decoration: none;
+        width: auto;
+
+      }
+
+      li a {
+        color: $white;
+        display: inline-block;
+        padding-left: 100px;
+        text-decoration: none;
+
+      }
+    }
   }
 }
