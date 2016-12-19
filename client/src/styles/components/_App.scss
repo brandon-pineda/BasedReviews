@@ -1,0 +1,15 @@
+$white: #fff;
+$bright-purple: #d026ce;
+
+.intro-container {
+  @include outer-container(100%);
+  background-color: $bright-purple;
+  color: $white;
+  // height: 150px;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 4em;
+  }
+}

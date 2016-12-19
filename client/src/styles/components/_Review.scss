@@ -1,0 +1,10 @@
+.review-container {
+  @include outer-container(100%);
+  text-align: left;
+
+  p {
+    @include span-columns(10, block);
+    @include shift(1);
+    font-size: 1.5em;
+  }
+}
