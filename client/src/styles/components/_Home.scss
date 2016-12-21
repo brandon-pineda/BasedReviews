@@ -1,0 +1,16 @@
+.home-container {
+  text-align: center;
+
+  p {
+    font-size: 2em;
+
+    a {
+      color: $black;
+
+      &:hover {
+        @include transition-duration(.5s);
+        color: $based-gold;
+      }
+    }
+  }
+}

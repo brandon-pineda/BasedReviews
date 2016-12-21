@@ -1,0 +1,23 @@
+.review-list-container {
+  @include outer-container(80%);
+  text-align: center;
+
+  .title {
+    @include row(block, $default-layout-direction);
+  }
+
+  .review {
+    @include span-columns(2, block);
+    color: $black;
+    text-decoration: none;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      @include transition-duration(.5s);
+      color: $based-gold;
+    }
+  }
+}

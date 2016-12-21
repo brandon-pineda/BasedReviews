@@ -1,11 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, Match } from 'react-router';
+import Review from './Review';
+import evilredflame from '../../assets/images/evilredflame.jpg'
 
-const ReviewList = () => (
+const ReviewList = ({ pathname }) => (
     <div>
-        <ul>
-            <li><Link to='/blue-flame'>Blue Flame</Link></li>
-        </ul>
+
+        <Match pattern={`${pathname}/blue-flame`} component={Review} />
+        <Match pattern={pathname} exactly render={() => (
+            <div className="review-list-container">
+                <h2
+                    className="title">Latest Reviews</h2>
+                <Link to={`${pathname}/blue-flame`}
+                    className='review'>
+                    <img src={evilredflame} alt='evil red flame cover art'/>
+                    Blue Flame
+                </Link>
+            </div>
+        )}/>
+
     </div>
 )
 

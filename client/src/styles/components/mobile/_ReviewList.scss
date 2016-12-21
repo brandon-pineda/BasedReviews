@@ -1,0 +1,10 @@
+.review-list-container {
+  @include media($mobile) {
+    @include outer-container(90%);
+
+    .review {
+      @include span-columns(2, block);
+    }
+  }
+
+}

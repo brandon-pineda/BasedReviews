@@ -1,45 +1,40 @@
 .review-container {
-  @include outer-container(95%);
+  @include media($mobile) {
+    @include outer-container(90%);
 
-  .image-title-container {
-    @include media($mobile) {
+    .image-title-container {
       @include span-columns(4, block);
       height: auto;
-    }
 
-    h2 {
-      @include media($mobile) {
+      h2 {
         font-size: 2em;
         text-align: center;
       }
     }
-  }
 
-  .image-container {
-    @include media($mobile) {
+    .image-container {
       @include span-columns(4, block);
-    }
 
-    figure {
-      @include media($mobile) {
+      figure {
         width: auto;
-      }
 
-      img {
-        @include media($mobile) {
+        img {
           height: auto;
           width: 100%;
         }
       }
     }
-  }
 
-  p {
-    @include media($mobile) {
+    .review-abstract {
       @include span-columns(4, block);
       @include shift(0);
-      font-size: 1em;
-      font-weight: 100;
+      font-size: 1.5em;
+    }
+
+    .review-body {
+      @include span-columns(4, block);
+      @include shift(0);
+      font-size: 1.2em;
     }
   }
 }

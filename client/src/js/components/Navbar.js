@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+const basedGold = { color: '#FFD700'}
+
 const Navbar = () => (
     <section className="intro-container">
         <h1>
-            <Link to='/'
-            style={{ color: 'white', textDecoration: 'none'}}
-            >
+            <Link to='/'>
                 BasedReviews
             </Link>
         </h1>
         <nav>
             <ul>
                 <li><Link to='/reviews'
-                activeStyle={{ color: '#FFD700'}}
+                activeStyle={basedGold}
                     >Reviews</Link></li>
             </ul>
         </nav>

@@ -1,5 +1,5 @@
 .review-container {
-  @include outer-container(70%);
+  @include outer-container(95%);
   margin-top: 10px;
 
   .image-title-container {
@@ -7,7 +7,7 @@
     align-items: center;
     display: flex;
     height: 465px;
-    justify-content: center;
+    justify-content: flex-end;
 
     h2 {
       font-size: 4em;
@@ -34,9 +34,19 @@
     }
   }
 
-  p {
-    @include span-columns(10, block);
-    @include shift(1);
+  .review-abstract {
+    @include span-columns(6, block);
+    @include shift(3);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .review-body {
+    @include span-columns(6, block);
+    @include shift(3);
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
+    font-weight: 400;
   }
 }

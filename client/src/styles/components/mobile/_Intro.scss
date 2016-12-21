@@ -1,7 +1,14 @@
 .intro-container {
   @include media($mobile) {
     h1 {
-      font-size: 2em;
+      @include span-columns(1, block);
+      font-size: 1.2em;
+    }
+
+    nav {
+      @include span-columns(3, block);
+      padding-right: .3em;
+      padding-top: .2;
     }
   }
 }
