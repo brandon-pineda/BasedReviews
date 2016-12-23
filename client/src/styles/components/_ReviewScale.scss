@@ -1,0 +1,13 @@
+.review-scale-container {
+  @include outer-container(60%);
+  text-align: center;
+
+  p {
+    @include span-columns(12, block);
+    font-size: 1.2em;
+
+    span {
+      color: $based-gold;
+    }
+  }
+}

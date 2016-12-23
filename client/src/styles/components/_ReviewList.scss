@@ -6,6 +6,17 @@
     @include row(block, $default-layout-direction);
   }
 
+  .review-scale-link {
+    @include row(block, $default-layout-direction);
+    color: $black;
+    font-size: 1.5em;
+
+    &:hover {
+      @include transition-duration(.5s);
+      color: $based-gold;
+    }
+  }
+
   .review {
     @include span-columns(2, block);
     color: $black;
