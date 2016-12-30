@@ -1,5 +1,6 @@
 .review-scale-container {
   @include media($mobile) {
-    @include outer-container(90%);
+    @include outer-container(100%);
+    margin-top: 0;
   }
 }

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import evilredflame from '../../assets/images/evilredflame.jpg'
-import {text} from '../../assets/text/evil-red-flame.js'
+import {abstract, body} from '../../assets/text/evil-red-flame.js'
 
 export default class Review extends Component {
 
@@ -21,11 +21,11 @@ export default class Review extends Component {
                 </section>
 
                 <p className="review-abstract">
-                    Shut those unbased people when they saying The Based God can't rap by showing them this tape.
+                    {abstract}
                 </p>
 
                 <p className="review-body">
-                    {text.split('\n').map((item, index) => {
+                    {body.split('\n').map((item, index) => {
                       return <span key={index}>{item}<br/></span>})}
                 </p>
             </section>
