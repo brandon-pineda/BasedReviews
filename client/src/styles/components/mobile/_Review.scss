@@ -1,6 +1,7 @@
 .review-container {
   @include media($mobile) {
-    @include outer-container(90%);
+    @include outer-container(100%);
+    margin-top: 0;
 
     .image-title-container {
       @include span-columns(4, block);
@@ -26,14 +27,14 @@
     }
 
     .review-abstract {
-      @include span-columns(4, block);
-      @include shift(0);
+      @include span-columns(3.7, block);
+      @include shift(.15);
       font-size: 1.5em;
     }
 
     .review-body {
-      @include span-columns(4, block);
-      @include shift(0);
+      @include span-columns(3.7, block);
+      @include shift(.15);
       font-size: 1.2em;
     }
   }

@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import evilredflame from '../../assets/images/evilredflame.jpg'
+import {text} from '../../assets/text/evil-red-flame.js'
 
 export default class Review extends Component {
 
@@ -7,7 +8,10 @@ export default class Review extends Component {
         return (
             <section className="review-container">
                 <header className="image-title-container">
-                    <h2>Evil Red Flame</h2>
+                    <h2>Evil Red Flame
+                        <br/>
+                        <span>8</span>
+                     </h2>
                 </header>
                 <section className="image-container">
                     <figure>
@@ -21,7 +25,8 @@ export default class Review extends Component {
                 </p>
 
                 <p className="review-body">
-                    Lil B has always been a source of contention.
+                    {text.split('\n').map((item, index) => {
+                      return <span key={index}>{item}<br/></span>})}
                 </p>
             </section>
         );

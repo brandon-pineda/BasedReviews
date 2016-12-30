@@ -1,6 +1,7 @@
 .review-container {
-  @include outer-container(95%);
-  margin-top: 10px;
+  @include outer-container(55%);
+  background-color: $white;
+  margin-top: 40px;
 
   .image-title-container {
     @include span-columns(6, block);
@@ -8,10 +9,17 @@
     display: flex;
     height: 465px;
     justify-content: flex-end;
+    text-align: center;
 
     h2 {
       font-size: 4em;
       font-weight: lighter;
+
+      span {
+        @include padding(null 20px null 20px);
+        border: solid 5px $based-gold;
+        border-radius: 50%;
+      }
     }
   }
 
@@ -35,16 +43,16 @@
   }
 
   .review-abstract {
-    @include span-columns(6, block);
-    @include shift(3);
+    @include span-columns(8, block);
+    @include shift(2);
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-weight: 700;
   }
 
   .review-body {
-    @include span-columns(6, block);
-    @include shift(3);
+    @include span-columns(8, block);
+    @include shift(2);
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
     font-weight: 400;
